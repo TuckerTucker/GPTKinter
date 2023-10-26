@@ -21,11 +21,11 @@ root.grid_columnconfigure(0, weight=1)
 # Colours
 BG_GRAY = "#303030"
 BG_COLOR = "#444444"
-TEXT_COLOR = "#ffffff"
+BG_OTHER = "#4f4f4f"
+TEXT_COLOR = "#e0e0e0"
 
 # Fonts
-FONT = "Helvetica 24"
-
+FONT = "Helvetica 18"
 
 #----- Send function
 def send():
@@ -67,7 +67,7 @@ txt = Text(root, bg=BG_COLOR, fg=TEXT_COLOR, font=FONT)
 txt.grid(row=1, column=0, columnspan=2, sticky="nsew")
 
 #----- The input field
-e = Text(root, bg="#4f4f4f", fg=TEXT_COLOR, font=FONT, width=80, height=5)
+e = Text(root, bg=BG_OTHER, fg=TEXT_COLOR, font=FONT, width=80, height=5)
 e.grid(row=2, column=0, sticky="nsew", padx=(10, 10), pady=(10, 15))
 
 #----- The Send Button
