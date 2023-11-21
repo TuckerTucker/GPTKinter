@@ -46,7 +46,7 @@ def send():
 
     # Call OpenAI
     openai.api_key = openai_api_key
-    response = openai.ChatCompletion.create(
+    response = openai.chat.completions.create(
         model="gpt-4",
         messages=[
             {"role": "system", "content": "You are a helpful assistant."},
